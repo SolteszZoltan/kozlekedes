@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace kozlekedes
 {
-    internal class meteo
+    class meteo : Utazas
     {
+        public meteo(double alapdij, double tavolsag)
+            : base(alapdij, tavolsag)
+        {
+        }
+        public override double arSzamitas()
+        {
+            return alapdij * 2 + tavolsag * 50;
+        }
     }
 }
