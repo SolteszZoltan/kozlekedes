@@ -6,7 +6,16 @@ using System.Threading.Tasks;
 
 namespace kozlekedes
 {
-    internal class eroller
+    class eroller : Utazas
     {
+        public eroller(double alapdij, double tavolsag)
+            : base(alapdij, tavolsag)
+        { 
+        }
+
+        public override double arSzamitas()
+        {
+            return tavolsag * 120;
+        }
     }
 }
